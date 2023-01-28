@@ -4,8 +4,8 @@ on:
   workflow_dispatch:
 
   # 取消下面两行注释，务必自行更改为随机时间
-  # schedule:
-  #   - cron: "30 1 * * *"
+  schedule:
+    - cron: "33 1 * * *"
 
 env:
   TZ: Asia/Shanghai
@@ -30,7 +30,7 @@ jobs:
 
       - name: Working
         env:
-          SMZDM_COOKIE: ${{ secrets.SMZDM_COOKIE }}
+          SMZDM_COOKIE: r_sort_type=score; shequ_pc_sug=b; homepage_sug=b; userId=user:9150426185|9150426185; frist-view=1; _ga_09SRZM2FDD=GS1.1.1636589739.64.1.1636590021.0; _ga=GA1.2.709811037.1592825176; device_id=21307064331654421355551283202adc16f13a159beedf041fd39fd4ff; __ckguid=bfclOjfphxA6AKOO5Vyc4; __jsluid_s=978681492ab65c81c2e1f36b2b609902; smzdm_user_source=08B8F8EEC3998DEC936F396AF9DB288A; sensorsdata2015jssdkcross=%7B%22distinct_id%22%3A%229150426185%22%2C%22first_id%22%3A%22173580f27b9bc-0170ce0d581133-4353760-2359296-173580f27ba2f6%22%2C%22props%22%3A%7B%22%24latest_traffic_source_type%22%3A%22%E7%9B%B4%E6%8E%A5%E6%B5%81%E9%87%8F%22%2C%22%24latest_search_keyword%22%3A%22%E6%9C%AA%E5%8F%96%E5%88%B0%E5%80%BC_%E7%9B%B4%E6%8E%A5%E6%89%93%E5%BC%80%22%2C%22%24latest_referrer%22%3A%22%22%2C%22%24latest_landing_page%22%3A%22https%3A%2F%2Fwww.smzdm.com%2F%22%7D%2C%22%24device_id%22%3A%22173580f27b9bc-0170ce0d581133-4353760-2359296-173580f27ba2f6%22%7D; footer_floating_layer=0; ad_date=28; bannerCounter=%5B%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%2C%7B%22number%22%3A0%2C%22surplus%22%3A1%7D%5D; ad_json_feed=%7B%7D; Hm_lvt_9b7ac3d38f30fe89ff0b8a0546904e58=1672900383,1674090352,1674867591; sess=BA-2b3NWb1gYGUdXpVXBlycQ5d7ybaBmxzhekz2Iz%2FvzqLJVEKrBthEQz%2BvGCKE4XFHarQjhIORFFWY7kwsxRu6MuLdC3HxE3P3tqrrcvRhVHpTcdbbWJUb%2F0XJ; user=user%3A9150426185%7C9150426185; smzdm_id=9150426185; _zdmA.uid=ZDMA.c3ztYsmZr.1674872663.2419200; _zdmA.vid=*; Hm_lpvt_9b7ac3d38f30fe89ff0b8a0546904e58=1674872663; _zdmA.time=1674872665760.0.https%3A%2F%2Fwww.smzdm.com%2F
           PUSH_PLUS_TOKEN: ${{ secrets.PUSH_PLUS_TOKEN }}
           SC_KEY: ${{ secrets.SC_KEY }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
